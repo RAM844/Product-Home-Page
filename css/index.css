@@ -5,13 +5,13 @@
     padding: 0;
     outline: 0;
     transition: 500ms;
+
 }
 
 body{ 
     margin-top: 40px;
     margin-left: 40px;  
     margin-right: 40px;
-    
 }
 
 nav{
@@ -53,6 +53,15 @@ nav .nav-items  .nav-item{
 /* media quries for under screen 1050 */
 
 @media screen and (max-width: 1050px){
+    nav{
+        overflow-x: hidden;
+    }
+    body{ 
+        margin-top: 40px;
+        margin-left: 5px;  
+        margin-right: 5px;
+        overflow-x: hidden;
+    }
     
     .intro-section{
         flex-direction: column-reverse;
@@ -70,13 +79,41 @@ nav .nav-items  .nav-item{
       display: none;
         background-color: black;
     }
-    nav img{
-        height: 35px;
-    } 
+    
     .hamburger{
         display: block;
       height: 20px;
+      margin-right: 1rem;
     }  
+    
+}
+
+@media screen and (max-width: 470px){
+   
+    .left-section h3{
+        font-size: 1rem;
+    }
+    .left-section h3 img{
+        width: 15%;
+    }
+    .intro-section h1{
+        font-size: 3rem;
+    }
+    .action-btn{  
+        font-size: .8rem;
+        margin-right:25px ;
+        padding: 8px 16px;
+        border-radius: 40px;
+    }
+    .action-btns{
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+    }
+
+    .headphone-div img{
+        height: 200px;
+    }
 }
 
 .left-section{
@@ -89,21 +126,23 @@ nav .nav-items  .nav-item{
 
 .left-section h3{
     height: 10%;
-    font-size: 40px;
+    font-size: 2.5rem;
     font-family: 'Poppins';
     font-weight: 300;
 }
 
 .left-section h3 img{
     height: 50%;
+
 }
 .intro-section h1{
-    font-size: 60px;
+    font-size: 3.75rem;
     font-family: 'Fredoka One';
     letter-spacing: 1.3px;
 }
 
 .sub-headlines{
+
     text-align: left;
     font-size: 25px;
     font-family: 'Poppins';
@@ -165,7 +204,6 @@ nav .nav-items  .nav-item{
 .discount{
     width: 130px;
     top: 10rem;
-    
 }
 .right-section button{
     width: 200px;
